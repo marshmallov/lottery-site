@@ -45,11 +45,11 @@
         <div class="flex flex-col space-y-2">
           <label class="inline-flex items-center">
             <input type="checkbox" v-model="form.consent1" class="form-checkbox h-5 w-5 text-blue-600" />
-            <span class="ml-2 text-gray-700">Zgoda 1</span>
+            <span class="ml-2 text-gray-700">Zgoda 1 (required)</span>
           </label>
           <label class="inline-flex items-center">
             <input type="checkbox" v-model="form.consent2" class="form-checkbox h-5 w-5 text-blue-600" />
-            <span class="ml-2 text-gray-700">Zgoda 2</span>
+            <span class="ml-2 text-gray-700">Zgoda 2 (required)</span>
           </label>
         </div>
       </div>
@@ -82,16 +82,19 @@ export default {
   },
   methods: {
     submitForm() {
+      // Require both checkboxes
+      if (!this.form.consent1 || !this.form.consent2) {
+        alert("Musisz zaakceptować wszystkie zgody, aby wysłać formularz.");
+        return;
+      }
+
       console.log("Form Submitted:", this.form);
       alert("Your application has been submitted!");
-      // Optional: reset form
-      this.form.firstName = "";
-      this.form.lastName = "";
-      this.form.email = "";
-      this.form.phone = "";
-      this.form.receiptNumber = "";
-      this.form.consent1 = false;
-      this.form.consent2 = false;
+
+      // Reset form
+      Object.keys(this.form).forEach(key => {
+        this.form[key] = (typeof this.form[key] === "boolean") ? false : "";
+      });
     },
   },
 };

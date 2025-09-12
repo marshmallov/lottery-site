@@ -1,18 +1,18 @@
 <template>
   <section class="py-20 bg-sky-950 text-center" :style="{ backgroundImage: `url(${rewardsImage})` }">
-    <h2 class="text-6xl text-white font-bold mb-10">Nagrody</h2>
+    <h2 class="text-6xl text-white font-app mb-10">Nagrody</h2>
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-6xl mx-auto">
       <div class="bg-white shadow-lg p-8">
-        <img :src="rewardImage1" alt="Reward 1" class="w-full h-84 object-contain mb-6">
-        <p class="text-lg font-medium">Nagroda 1</p>
+        <img :src="rewardImage1" alt="Reward 1" class="w-full h-100 object-contain mb-6">
+        <p class="text-lg font-bold">Nagroda 1</p>
       </div>
       <div class="bg-white shadow-lg p-8">
-        <img :src="rewardImage2" alt="Reward 2" class="w-full h-84 object-contain mb-6">
-        <p class="text-lg font-medium">Nagroda 2</p>
+        <img :src="rewardImage2" alt="Reward 2" class="w-full h-100 object-contain mb-6">
+        <p class="text-lg font-bold">Nagroda 2</p>
       </div>
       <div class="bg-white shadow-lg p-8">
-        <img :src="rewardImage3" alt="Reward 3" class="w-full h-84 object-contain mb-6">
-        <p class="text-lg font-medium">Nagroda 3</p>
+        <img :src="rewardImage3" alt="Reward 3" class="w-full h-100 object-contain mb-6">
+        <p class="text-lg font-bold">Nagroda 3</p>
       </div>
     </div>
   </section>
