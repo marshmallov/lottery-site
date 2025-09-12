@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-screen flex flex-col bg-cover bg-center bg-no-repeat"
+  <section id="home" class="relative min-h-screen flex flex-col bg-cover bg-center bg-no-repeat"
     :style="{ backgroundImage: `url(${heroImage})` }">
 
     <!-- Content -->
