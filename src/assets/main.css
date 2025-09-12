@@ -1,22 +1,26 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
+@custom-variant dark (&:is(.dark *));
 
 @font-face {
   font-family: "MyAppFont";
-  src: url("/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf") format("truetype");
+  src: url("/fonts/Anta/Anta-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
-
 
 /* Tell Tailwind about it */
 @theme {
   --font-app: "MyAppFont", sans-serif;
 }
-
 /* Apply globally */
 @layer base {
-  html, body {
-    @apply font-app ;   /* font-sans font-bold*/
+  html, body, * {
+    font-family: "MyAppFont", ui-sans-serif, system-ui, sans-serif;   /* font-sans font-bold*/
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -1,5 +1,6 @@
 <template>
   <div id="app" class="min-h-screen">
+    <Navbar />
     <Hero />
     <Rewards />
     <Rules />
@@ -10,6 +11,7 @@
 </template>
 
 <script>
+import Navbar from './components/Navbar.vue'
 import Hero from './components/Hero.vue'
 import Rewards from './components/Rewards.vue'
 import Rules from './components/Rules.vue'
@@ -21,6 +23,7 @@ import Footer from './components/Footer.vue'
 export default {
   name: 'App',
   components: {
+    Navbar,
     Hero,
     Rewards,
     Rules,

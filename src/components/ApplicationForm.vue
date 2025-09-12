@@ -1,29 +1,29 @@
 <template>
-  <section class="py-20 bg-gray-50" :style="{ backgroundImage: `url(${formImage})` }">
-    <h2 class="text-6xl font-bold text-center mb-12">Formularz</h2>
+  <section id="form" class="py-20 bg-gray-50" :style="{ backgroundImage: `url(${formImage})` }">
+    <h2 class="text-6xl  text-center mb-12">Formularz</h2>
     <form class="max-w-2xl mx-auto bg-white shadow-xl p-10 space-y-8" @submit.prevent="submitForm">
       <!-- DANE Section -->
       <div class="space-y-4">
-        <h3 class="text-3xl font-bold text-gray-800 mb-4">Dane</h3>
+        <h3 class="text-3xl  text-gray-800 mb-4">Dane</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label class="block text-gray-700 mb-1 font-bold">Imię</label>
+            <label class="block text-gray-700 mb-1 ">Imię</label>
             <input v-model="form.firstName" type="text" placeholder="Imię"
               class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-400" required />
           </div>
           <div>
-            <label class="block text-gray-700 mb-1 font-bold">Nazwisko</label>
+            <label class="block text-gray-700 mb-1 ">Nazwisko</label>
             <input v-model="form.lastName" type="text" placeholder="Nazwisko"
               class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-400" required />
           </div>
         </div>
         <div>
-          <label class="block text-gray-700 mb-1 font-bold">Email</label>
+          <label class="block text-gray-700 mb-1 ">Email</label>
           <input v-model="form.email" type="email" placeholder="Email"
             class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-400" required />
         </div>
         <div>
-          <label class="block text-gray-700 mb-1 font-bold">Numer telefonu</label>
+          <label class="block text-gray-700 mb-1 ">Numer telefonu</label>
           <input v-model="form.phone" type="tel" placeholder="Numer telefonu"
             class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-400" />
         </div>
@@ -31,9 +31,9 @@
 
       <!-- PARAGON Section -->
       <div class="space-y-4">
-        <h3 class="text-3xl font-bold text-gray-800 mb-4">Paragon</h3>
+        <h3 class="text-3xl  text-gray-800 mb-4">Paragon</h3>
         <div>
-          <label class="block text-gray-700 mb-1 font-bold">Numer paragonu</label>
+          <label class="block text-gray-700 mb-1 ">Numer paragonu</label>
           <input v-model="form.receiptNumber" type="text" placeholder="Numer paragonu"
             class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-400" required />
         </div>
@@ -41,7 +41,7 @@
 
       <!-- ZGODY Section -->
       <div class="space-y-4">
-        <h3 class="text-3xl font-bold text-gray-800 mb-4">Zgody</h3>
+        <h3 class="text-3xl  text-gray-800 mb-4">Zgody</h3>
         <div class="flex flex-col space-y-2">
           <label class="inline-flex items-center">
             <input type="checkbox" v-model="form.consent1" class="form-checkbox h-5 w-5 text-blue-600" />
@@ -56,7 +56,7 @@
 
       <!-- Submit Button -->
       <button type="submit"
-        class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-4 w-full text-lg font-bold hover:scale-105 transform transition-all duration-300 shadow-lg">
+        class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-4 w-full text-lg  hover:scale-105 transform transition-all duration-300 shadow-lg">
         Wyślij
       </button>
     </form>

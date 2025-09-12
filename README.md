@@ -1,35 +1,24 @@
-# lottery-site
+# Simple Lottery Site
+![Website Screenshot](/public/images/SS1.png)
 
-This template should help get you started developing with Vue 3 in Vite.
+A **one-page lottery website** template built with **Vue 3**, **Tailwind CSS 4**.
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Technologies Used
 
-## Customize configuration
+- [Vue 3](https://v3.vuejs.org/) – JavaScript framework  
+- [Tailwind CSS 4](https://tailwindcss.com/) – Utility-first CSS framework  
+- JavaScript / HTML / CSS  
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Installation & Setup
+Before you start, make sure you have **[Node.js](https://nodejs.org/)** (LTS recommended) installed on your machine. I used node v22.15.0. 
 
-## Project Setup
-
+1. Clone or download the repository.
+2. Install dependencies inside repository folder.
 ```sh
 npm install
 ```
-
-### Compile and Hot-Reload for Development
-
+3. Start project
 ```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```

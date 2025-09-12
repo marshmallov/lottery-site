@@ -1,6 +1,6 @@
 <template>
-  <section class="py-20 bg-sky-950 text-center" :style="{ backgroundImage: `url(${rewardsImage})` }">
-    <h2 class="text-6xl text-white font-app mb-10">Nagrody</h2>
+  <section id="rewards" class="py-20 bg-sky-950 text-center" :style="{ backgroundImage: `url(${rewardsImage})` }">
+    <h2 class="text-6xl text-white  mb-10">Nagrody</h2>
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-6xl mx-auto">
       <div class="bg-white shadow-lg p-8">
         <img :src="rewardImage1" alt="Reward 1" class="w-full h-100 object-contain mb-6">
