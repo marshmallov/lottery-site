@@ -37,8 +37,13 @@
         </div>
       </div> -->
 
+      <div class="flex justify-center">
+        <img :src="rewardImage4" alt="Reward 2" class="w-80 sm:w-80 md:w-140 lg:w-180 object-contain " />
+      </div>
+
+
       <!-- Rewards images -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 my-12 px-6">
+      <!-- <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 my-12 px-6">
         <div class="flex justify-center">
           <img :src="rewardImage1" alt="Reward 1"
             class="w-48 sm:w-40 md:w-56 lg:w-100 object-contain transform hover:scale-105 transition duration-300" />
@@ -51,7 +56,7 @@
           <img :src="rewardImage3" alt="Reward 3"
             class="w-48 sm:w-40 md:w-56 lg:w-100 object-contain transform hover:scale-105 transition duration-300" />
         </div>
-      </div>
+      </div> -->
 
       <!-- Button at the bottom -->
       <div class="mb-19">
@@ -82,7 +87,8 @@ export default {
       heroImage: '/images/hero-bg2.png',
       rewardImage1: '/images/rw1.png',
       rewardImage2: '/images/rw2.png',
-      rewardImage3: '/images/rw3.png'
+      rewardImage3: '/images/rw3.png',
+      rewardImage4: '/images/rw4.png'
     }
   },
   methods: {
