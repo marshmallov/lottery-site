@@ -4,21 +4,38 @@
 
     <!-- Content -->
     <div
-      class="relative z-10 flex flex-col justify-between flex-grow text-center text-gray-200 px-4 max-w-4xl mx-auto w-full">
+      class="relative z-10 flex flex-col justify-between flex-grow text-center text-gray-200 px-4 max-w-6xl mx-auto w-full">
+
       <!-- Top area (title, subtitle, etc.) -->
       <div class="mt-20">
         <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          <!-- {{ title }} -->
+          {{ title }}
         </h1>
         <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
-          <!-- {{ subtitle }} -->
+          {{ subtitle }}
         </p>
+      </div>
+
+      <!-- Rewards images -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 my-12 px-6">
+        <div class="flex justify-center">
+          <img :src="rewardImage1" alt="Reward 1"
+            class="w-48 sm:w-40 md:w-56 lg:w-100 object-contain transform hover:scale-105 transition duration-300" />
+        </div>
+        <div class="flex justify-center">
+          <img :src="rewardImage2" alt="Reward 2"
+            class="w-48 sm:w-40 md:w-56 lg:w-100 object-contain transform hover:scale-105 transition duration-300" />
+        </div>
+        <div class="flex justify-center">
+          <img :src="rewardImage3" alt="Reward 3"
+            class="w-48 sm:w-40 md:w-56 lg:w-100 object-contain transform hover:scale-105 transition duration-300" />
+        </div>
       </div>
 
       <!-- Button at the bottom -->
       <div class="mb-19">
         <button @click="scrollToApplication"
-          class=" text-lg py-5 px-48 py-4 transform hover:scale-105 transition-all duration-300 shadow-lg bg-gradient-to-r from-blue-800 to-cyan-500 text-white">
+          class="text-lg py-5 px-10 sm:px-20 md:px-32 lg:px-48 transform hover:scale-105 transition-all duration-300 shadow-lg bg-gradient-to-r from-blue-800 to-cyan-500 text-white">
           {{ buttonText }}
         </button>
       </div>
@@ -38,10 +55,13 @@ export default {
   name: 'Hero',
   data() {
     return {
-      title: 'Join Our Amazing Contest',
-      subtitle: 'Zagraj i wygraj',
+      title: 'Wygrywaj niesamowite nagrody',
+      subtitle: 'Zagraj i zgarnij',
       buttonText: 'Weź Udział',
-      heroImage: '/images/hero-bg.png'
+      heroImage: '/images/hero-bg2.png',
+      rewardImage1: '/images/rw1.png',
+      rewardImage2: '/images/rw2.png',
+      rewardImage3: '/images/rw3.png'
     }
   },
   methods: {
