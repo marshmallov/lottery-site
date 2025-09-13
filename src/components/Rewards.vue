@@ -26,9 +26,9 @@ export default {
       title: 'Join Our Amazing Contest',
       subtitle: 'Zagraj i wygraj',
       buttonText: 'Weź Udział',
-      rewardImage1: '/images/reward1.png',
-      rewardImage2: '/images/reward2.png',
-      rewardImage3: '/images/reward3.png',
+      rewardImage1: '/images/rw1.png',
+      rewardImage2: '/images/rw2.png',
+      rewardImage3: '/images/rw3.png',
       rewardsImage: ''
     }
   },
