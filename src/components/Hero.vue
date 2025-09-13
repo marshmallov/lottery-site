@@ -16,6 +16,27 @@
         </p>
       </div>
 
+      <!-- <div class="container m-auto grid grid-cols-3 gap-4 p-6">
+        <div class="tile col-span-3  md:col-span-3 lg:col-span-3 flex items-center justify-center">
+          <img :src="rewardImage1" alt="Reward 1" class="w-full h-48 object-contain" />
+        </div>
+        <div class="tile col-span-3 md:col-span-1 lg:col-span-1 flex items-center justify-center">
+          <img :src="rewardImage1" alt="Reward 2" class="w-full h-40 object-contain" />
+        </div>
+        <div class="tile col-span-3 row-span-2 md:col-span-1 lg:col-span-1 flex items-center justify-center">
+          <img :src="rewardImage3" alt="Reward 3 & 6" class="w-full h-80 object-contain" />
+        </div>
+        <div class="tile flex items-center justify-center">
+          <img :src="rewardImage1" alt="Reward 4" class="w-full h-40 object-contain" />
+        </div>
+        <div class="tile flex items-center justify-center">
+          <img :src="rewardImage1" alt="Reward 5" class="w-full h-40 object-contain" />
+        </div>
+        <div class="tile flex items-center justify-center">
+          <img :src="rewardImage3" alt="Reward 7" class="w-full h-40 object-contain" />
+        </div>
+      </div> -->
+
       <!-- Rewards images -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 my-12 px-6">
         <div class="flex justify-center">
